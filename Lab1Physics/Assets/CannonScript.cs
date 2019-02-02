@@ -24,11 +24,11 @@ public class CannonScript : MonoBehaviour
             fireDelay = Time.time + rateOfFire;
             
             GameObject clone = Instantiate(cannonball, transform.position, transform.rotation);
+
             rb = clone.GetComponent<Rigidbody>();
             Vector3 direction = new Vector3(0,speed, 0);
             rb.velocity = transform.TransformDirection(direction);
             Physics.IgnoreCollision(clone.GetComponent<Collider>(), transform.root.GetComponent<Collider>());
-            Destroy(clone, 5f);
         }
     }
 }
