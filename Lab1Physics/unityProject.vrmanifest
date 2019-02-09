@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.lab1physics.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\league95\\Documents\\GitHub\\Unity-Lab1Physics\\Lab1Physics\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Lab1Physics [Testing]"
+        }
+      }
+    }
+  ]
+}

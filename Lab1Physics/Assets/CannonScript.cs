@@ -10,7 +10,7 @@ public class CannonScript : MonoBehaviour
     public float rateOfFire;
     float fireDelay;
     public float speed;
-
+    
     // Start is called before the first frame update
     void Start()
     {
