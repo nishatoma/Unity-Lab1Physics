@@ -37,6 +37,15 @@ public class CannonScript : MonoBehaviour
                 fireBall();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.G)) {
+            speed += 2;
+            
+        } else if (Input.GetKeyDown(KeyCode.H)) {
+            speed -= 2;
+        }
+
+        adjustSpeed();
     }
 
     void fireBall() {
@@ -48,5 +57,13 @@ public class CannonScript : MonoBehaviour
             Vector3 direction = new Vector3(0,speed, 0);
             rb.velocity = transform.TransformDirection(direction);
             Physics.IgnoreCollision(clone.GetComponent<Collider>(), transform.root.GetComponent<Collider>());
+    }
+
+    void adjustSpeed() {
+        if (speed > 45) {
+            speed = 45;
+        } else if (speed < 10) {
+            speed = 10;
+        }
     }
 }
