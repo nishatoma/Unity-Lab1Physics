@@ -14,7 +14,6 @@ public class CylinderController : MonoBehaviour
     float y, z;
     Vector3 rot;
 
-
     // Start is called before the first frame update
     void Start()
     {
