@@ -34,9 +34,9 @@ public class CylinderController : MonoBehaviour
 
         if (headsetMode) {
             rot = transform.rotation;
-            rot.z = -player.transform.GetChild(2).gameObject.transform.rotation.y;
+            rot.z = -player.transform.GetChild(0).GetChild(1).gameObject.transform.rotation.y;
             transform.rotation = rot;
-            rot.x = player.transform.GetChild(2).gameObject.transform.rotation.x + 0.6f;
+            rot.x = player.transform.GetChild(0).GetChild(1).gameObject.transform.rotation.x + 0.6f;
             transform.rotation = rot;
         } else {
             if (Input.GetKey(KeyCode.RightArrow)) {
